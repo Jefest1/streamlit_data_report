@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from streamlit_pandas_profiling import st_profile_report
 # import sweetviz as sv
-from pandas_profiling import ProfileReport
+from ydata_profiling import ProfileReport
 
 # set page configurations
 st.set_page_config(page_title='Data Profiling', layout='wide')
