@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from streamlit_pandas_profiling import st_profile_report
 # import sweetviz as sv
-from ydata_profiling import ProfileReport
+from pandas_profiling import ProfileReport
 
 # set page configurations
 st.set_page_config(page_title='Data Profiling', layout='wide')
@@ -43,6 +43,6 @@ try:
 
     with st.spinner("Analysing Data"):
         report = ProfileReport(file, minimal=min_, explorative=True)
-        st_profile_report(report)
+        st_profile_report(report,)
 except:
     f"No File Opened"
